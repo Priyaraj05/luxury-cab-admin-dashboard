@@ -1,7 +1,7 @@
 import { SiteConfig } from "@/types"
 
 export const siteConfig: SiteConfig = {
-  name: "Luxury Cab",
+  name: "Car Rental Service",
   description:
     "An admin dashboard built using the new router, server components and everything new in Next.js 13 and shadcn ui",
   url: "https://priya-portfolio-sigma.vercel.app/",
