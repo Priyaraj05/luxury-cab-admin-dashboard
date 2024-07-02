@@ -60,7 +60,7 @@ export function DataTable<TData, TValue>({
   });
 
   // Bool to check if a row is selected
-  const isRowsSelected = table.getSelectedRowModel().rows.length > 0;
+  const isRowsSelected = table.getSelectedRowModel().rows.length != null && table.getSelectedRowModel().rows.length > 0;
 
   return (
     <div>

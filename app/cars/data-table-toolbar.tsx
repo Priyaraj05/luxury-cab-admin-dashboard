@@ -23,9 +23,9 @@ export function DataTableToolbar<TData>({
   const isFiltered = table.getState().columnFilters.length > 0
 
   // get unique cities from the data
-  const uniqueCities = new Set(data.map((car) => car.City_Info?.CityName))
+  const uniqueCities = new Set(data?.map((car) => car.City_Info?.CityName))
   const cities = Array.from(uniqueCities)
-  const uniqueModels = new Set(data.map((car) => car.Car_Details?.Model))
+  const uniqueModels = new Set(data?.map((car) => car.Car_Details?.Model))
   const models = Array.from(uniqueModels)
 
   const citiesObject = cities.map(city => {
